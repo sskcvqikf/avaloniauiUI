@@ -1,0 +1,266 @@
+<Styles
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+     <!-- DESIGNING COMMON STYLE        -->
+    <Style Selector="Window">
+        <Setter Property="FontFamily" Value="Ubuntu"/>
+        <!-- <Setter Property="Background" Value="#FFFFFF"/> -->
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+    </Style>
+    <Style Selector="Button">
+        <Setter Property="Cursor" Value="Hand" />
+    </Style>
+
+
+    <!-- DESIGNING BOTTOM LOGOUT BUTTON -->
+    <Style Selector="Button.BottomBtn">
+        <Setter Property="FontWeight" Value="Black"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="Background" Value="#f5eaea"/>
+        <Setter Property="Foreground" Value="#1b262c"/>
+        <Setter Property="BorderThickness" Value="0"/>
+    </Style>
+    <Style Selector="Border.BottomBtn_bd">
+        <Setter Property="CornerRadius" Value="0 0 0 0"/>
+        <Setter Property="Background" Value="#f5eaea"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="BorderBrush" Value="#f5eaea"/>
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="Margin" Value="0 0 0 0"/>
+    </Style>
+
+
+    <!-- DESIGNING TOP USERS TEXTBOX -->
+    <!-- <Style Selector="Border.TopLogin_bd">
+        <Setter Property="CornerRadius" Value="0 0 0 0"/>
+        <Setter Property="BorderThickness" Value="5"/>
+        <Setter Property="Background" Value="#4E878C"/>
+        <Setter Property="BorderBrush" Value="#4E878C"/>
+        <Setter Property="Margin" Value="0 0 0 0"/>
+        <Setter Property="Height" Value="30"/>
+    </Style>
+    <Style Selector="TextBlock.TopLogin">
+        <Setter Property="FontWeight" Value="Black"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Background" Value="#4E878C"/>
+        <Setter Property="Foreground" Value="#B5FFE1"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+    </Style> -->
+
+
+        <!-- DSIGNING CHAT PREVIEW -->
+    <Style Selector="StackPanel.ChatList">
+        <Setter Property="Margin" Value="0 0 0 0"/>
+        <Setter Property="Width" Value="380"/>
+    </Style>
+
+    <Style Selector="Border.ChatPreview_bd">
+        <Setter Property="Background" Value="#1b262c"/>
+    </Style>
+
+    <Style Selector="DockPanel.ChatPreview">
+        <Setter Property="Height" Value="50"/>
+    </Style>
+
+    <Style Selector="DockPanel.ChatPreview TextBlock">
+        <Setter Property="FontWeight" Value="Light"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style Selector="TextBlock.Name">
+        <Setter Property="FontWeight" Value="Black"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="Margin" Value=" 7 5 0 0"/>
+    </Style>
+    <Style Selector="TextBlock.LastMessage">
+        <Setter Property="FontWeight" Value="Light"/>
+        <Setter Property="FontSize" Value="13"/>
+        <Setter Property="Foreground" Value="#B5B5B5"/>
+        <Setter Property="Margin" Value="12 5 0 0"/>
+    </Style>
+
+    <Style Selector="DockPanel.ChatPreview StackPanel.Unread">
+        <Setter Property="Margin" Value=" 0 5 15 0"/>
+    </Style>
+    <Style Selector="DockPanel.ChatPreview TextBlock.n">
+        <Setter Property="FontWeight" Value="Black"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="Foreground" Value="#dcd6f7"/>
+        <Setter Property="Margin" Value=" 0 0 5 0"/>
+    </Style>
+
+    <Style Selector="DockPanel.ChatPreview TextBlock.u">
+        <Setter Property="Margin" Value=" 0 0 15 0"/>
+    </Style>
+
+    <Style Selector="DockPanel.ChatPreview StackPanel.MetaInfo">
+        <Setter Property="Margin" Value="0 5 10 0"/>
+    </Style>
+    <Style Selector="DockPanel.ChatPreview StackPanel.MetaInfo TextBlock.Date">
+        <Setter Property="FontWeight" Value="Regular"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="Foreground" Value="#dcd6f7"/>
+        <Setter Property="Margin" Value="0 0 15 0"/>
+    </Style>
+
+
+    <Style Selector="Border.ChatPreview_bd:pointerover">
+        <Setter Property="Background" Value="#E61b262c"/>
+    </Style>
+
+
+    <!-- DESIGNING EM SCROLLBAR -->
+    <Style Selector="ScrollViewer.ChatList_scroll /template/ScrollBar">
+        <Setter Property="Margin" Value="-12 5 0 5"/>
+        <Setter Property="Width" Value="7"/>
+        <Setter Property="Template">
+            <ControlTemplate>
+            <Border Background="#b5b5b5">
+                <Track
+                    Minimum="{TemplateBinding Minimum}"
+                    Maximum="{TemplateBinding Maximum}"
+                    Value="{TemplateBinding Value, Mode=TwoWay}"
+                    ViewportSize="{TemplateBinding ViewportSize}"
+                    Orientation="{TemplateBinding Orientation}"
+                    IsDirectionReversed="True">
+                <Thumb Name="thumb"/>
+                </Track>
+            </Border>
+        </ControlTemplate>
+        </Setter>
+    </Style>
+    <Style Selector="ScrollViewer.ChatList_scroll">
+        <Setter Property="Height" Value="440" />
+    </Style>
+    <Style Selector="ScrollViewer.ChatList_scroll /template/ScrollBar:vertical">
+        <Setter Property="Opacity" Value="0.15"/>
+        <Setter Property="Transitions">
+                <Transitions>
+                    <DoubleTransition Property="Opacity" Duration="0:0:0.15"/>
+                </Transitions>
+            </Setter>
+    </Style>
+    <Style Selector="ScrollViewer.ChatList_scroll /template/ScrollBar:vertical:pointerover">
+        <Setter Property="Opacity" Value="0.25"/>
+    </Style>
+    <Style Selector="ScrollViewer.ChatList_scroll /template/ScrollBar:vertical /template/Border">
+        <Setter Property="CornerRadius" Value="3"/>
+    </Style>
+    <Style Selector="ScrollViewer.ChatList_scroll /template/ScrollBar:vertical /template/ Thumb">
+        <Setter Property="Width" Value="7"/>
+        <Setter Property="Opacity" Value="0.9"/>
+        <Setter Property="Background" Value="#cae8d5"/>
+    </Style>
+    <Style Selector="ScrollViewer.ChatList_scroll /template/ScrollBar:vertical /template/ Thumb /template/Border">
+        <Setter Property="CornerRadius" Value="3"/>
+    </Style>
+
+
+    <Style Selector="TextBlock.LoginGreeting">
+        <Setter Property="Foreground" Value="#f5eaea" />
+        <Setter Property="FontSize" Value="32" />
+        <Setter Property="Margin" Value="5 30 0 0" />
+        <Setter Property="FontWeight" Value="Light" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+    <Style Selector="StackPanel.LoginForm">
+        <Setter Property="Margin" Value="0 100 0 0" />
+    </Style>
+    <Style Selector="StackPanel.LBox">
+        <Setter Property="Width" Value="280" />
+        <Setter Property="Margin" Value="0 10 0 0" />
+    </Style>
+    <Style Selector="StackPanel.LBox TextBox">
+        <Setter Property="Height" Value="40" />
+        <Setter Property="Background" Value="#f5eaea" />
+        <Setter Property="Foreground" Value="#1b262c" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="Padding" Value="5 10 0 0" />
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+    <Style Selector="StackPanel.LoginForm TextBlock.RequestAccount">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Foreground" Value="#f5eaeaD9" />
+        <Setter Property="FontWeight" Value="Light" />
+        <Setter Property="Margin" Value="0 10 0 0" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+    <Style Selector="StackPanel.LoginForm TextBlock.RequestAccount:pointerover">
+        <Setter Property="Foreground" Value="#f5eaeaff" />
+    </Style>
+    <Style Selector="Button.LoginButton">
+        <Setter Property="Height" Value="40" />
+        <Setter Property="Background" Value="#f5eaea" />
+    </Style>
+    <Style Selector="Button.LoginButton TextBlock">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+
+
+    <Style Selector="TextBlock.RequestCredentialsGreeting">
+        <Setter Property="Foreground" Value="#f5eaea" />
+        <Setter Property="FontSize" Value="24" />
+        <Setter Property="Margin" Value="5 40 0 0" />
+        <Setter Property="FontWeight" Value="Light" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+    <Style Selector="StackPanel.RequestCredentialsForm">
+        <Setter Property="Margin" Value="0 70 0 0" />
+    </Style>
+    <Style Selector="StackPanel.RequestCredentialsForm TextBlock.AlreadyAccount">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Foreground" Value="#f5eaeaD9" />
+        <Setter Property="FontWeight" Value="Light" />
+        <Setter Property="Margin" Value="0 10 0 0" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+    <Style Selector="StackPanel.RequestCredentialsForm TextBlock.AlreadyAccount:pointerover">
+        <Setter Property="Foreground" Value="#f5eaeaff" />
+    </Style>
+    <Style Selector="StackPanel.RBox">
+        <Setter Property="Width" Value="280" />
+        <Setter Property="Margin" Value="0 10 0 0" />
+    </Style>
+    <Style Selector="StackPanel.RBox TextBox">
+        <Setter Property="Height" Value="40" />
+        <Setter Property="Background" Value="#f5eaea" />
+        <Setter Property="Foreground" Value="#1b262c" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="Padding" Value="5 10 0 0" />
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+    <Style Selector="Button.RequestCredentialsButton">
+        <Setter Property="Height" Value="40" />
+        <Setter Property="Background" Value="#f5eaea" />
+    </Style>
+    <Style Selector="Button.RequestCredentialsButton TextBlock">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+    <Style Selector="StackPanel.NewPassword">
+        <Setter Property="Margin" Value="0 70 0 0" />
+        <Setter Property="Width" Value="280" />
+    </Style>
+    <Style Selector="StackPanel.NewPassword TextBlock">
+        <Setter Property="Foreground" Value="#b5b5b5" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+    <Style Selector="StackPanel.NewPassword TextBlock.i">
+        <Setter Property="FontSize" Value="14" />
+    </Style>
+    <Style Selector="StackPanel.NewPassword TextBlock.p">
+        <Setter Property="Margin" Value="0 10 0 0" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="FontSize" Value="16" />
+    </Style>
+
+
+</Styles>

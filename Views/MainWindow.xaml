@@ -1,0 +1,17 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:Desktop.ViewModels;assembly=Desktop"
+        xmlns:v="clr-namespace:Desktop.Views"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Desktop.Views.MainWindow"
+        Width="380" Height="480"
+        MaxWidth="380" MaxHeight="480"
+        MinWidth="380" MinHeight="480"
+        Icon="/Assets/entourage-logo.ico"
+        Title="Entourage">
+        
+        <v:LoginView/>
+
+</Window>

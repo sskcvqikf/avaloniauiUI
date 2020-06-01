@@ -1,0 +1,292 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Class="Desktop.Views.ChatListView">
+
+    <DockPanel>
+
+        <Border Classes="BottomBtn_bd" DockPanel.Dock="Bottom">
+            <Button Classes="BottomBtn" >Log Out</Button>
+        </Border>
+
+        <!-- <Border Classes="TopLogin_bd" DockPanel.Dock="Top">
+            <TextBlock Classes="TopLogin" Text="Your login is SSKCVQIKFMRGMRA" />
+        </Border> -->
+
+
+        <ScrollViewer Classes="ChatList_scroll">
+            <StackPanel Classes="ChatList">
+
+                <Border Classes="ChatPreview_bd">
+                    <DockPanel Classes="ChatPreview">
+                        <StackPanel DockPanel.Dock="Left" Orientation="Vertical" HorizontalAlignment="Right">
+                            <TextBlock Classes="Name" Text="DMITRI" />
+                            <TextBlock Classes="LastMessage" Text="Have u discovered Arc?" />
+                        </StackPanel>
+                        <StackPanel DockPanel.Dock="Right" Orientation="Vertical" HorizontalAlignment="Right">
+                            <StackPanel Classes="Unread" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="n" Text="156" />
+                                <TextBlock Classes="u" Text="unread" />
+                            </StackPanel>
+                            <StackPanel Classes="MetaInfo" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="Date" Text="12.03.2020" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DockPanel> 
+                </Border>
+
+                <!-- <Border Classes="ChatPreview_bd">
+                    <DockPanel Classes="ChatPreview">
+                        <StackPanel DockPanel.Dock="Left" Orientation="Vertical" HorizontalAlignment="Right">
+                            <TextBlock Classes="Name" Text="KORINN" />
+                            <TextBlock Classes="LastMessage" Text="lemme smash, please." />
+                        </StackPanel>
+                        
+                        <StackPanel DockPanel.Dock="Right" Orientation="Vertical" HorizontalAlignment="Right">
+                            <StackPanel Classes="Unread" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="n" Text="156" />
+                                <TextBlock Classes="u" Text="unread" />
+                            </StackPanel>
+                            <StackPanel Classes="MetaInfo" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="Date" Text="12.03.2020" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DockPanel> 
+                </Border> -->
+
+
+                <Border Classes="ChatPreview_bd">
+                    <DockPanel Classes="ChatPreview">
+                        <StackPanel DockPanel.Dock="Left" Orientation="Vertical" HorizontalAlignment="Right">
+                            <TextBlock Classes="Name" Text="LokiVKlokeNaAndoke" />
+                            <TextBlock Classes="LastMessage" Text="SHITCODE FIXED" />
+                        </StackPanel>
+                        <StackPanel DockPanel.Dock="Right" Orientation="Vertical" HorizontalAlignment="Right">
+                            <StackPanel Classes="Unread" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="n" Text="0" />
+                                <TextBlock Classes="u" Text="unread" />
+                            </StackPanel>
+                            <StackPanel Classes="MetaInfo" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="Date" Text="25.05.2019" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DockPanel> 
+                </Border>
+
+                <!-- <Border Classes="ChatPreview_bd">
+                    <DockPanel Classes="ChatPreview">
+                        <StackPanel DockPanel.Dock="Left" Orientation="Vertical" HorizontalAlignment="Right">
+                            <TextBlock Classes="Name" Text="Mercurius" />
+                            <TextBlock Classes="LastMessage" Text="Your tail is so small. I`m leaving" />
+                        </StackPanel>
+                        
+                        <StackPanel DockPanel.Dock="Right" Orientation="Vertical" HorizontalAlignment="Right">
+                            <StackPanel Classes="Unread" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="n" Text="1" />
+                                <TextBlock Classes="u" Text="unread" />
+                            </StackPanel>
+                            <StackPanel Classes="MetaInfo" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="Date" Text="27.03.2020" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DockPanel> 
+                </Border> -->
+
+                <Border Classes="ChatPreview_bd">
+                    <DockPanel Classes="ChatPreview">
+                        <StackPanel DockPanel.Dock="Left" Orientation="Vertical" HorizontalAlignment="Right">
+                            <TextBlock Classes="Name" Text="Drunkennesss" />
+                            <TextBlock Classes="LastMessage" Text="Commited some c#." />
+                        </StackPanel>
+                        
+                        <StackPanel DockPanel.Dock="Right" Orientation="Vertical" HorizontalAlignment="Right">
+                            <StackPanel Classes="Unread" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="n" Text="12" />
+                                <TextBlock Classes="u" Text="unread" />
+                            </StackPanel>
+                            <StackPanel Classes="MetaInfo" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="Date" Text="05.02.2020" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DockPanel> 
+                </Border>
+
+
+                <Border Classes="ChatPreview_bd">
+                    <DockPanel Classes="ChatPreview">
+                        <StackPanel DockPanel.Dock="Left" Orientation="Vertical" HorizontalAlignment="Right">
+                            <TextBlock Classes="Name" Text="Sanya" />
+                            <TextBlock Classes="LastMessage" Text="Поотмечайтесь на статистике" />
+                        </StackPanel>
+                        
+                        <StackPanel DockPanel.Dock="Right" Orientation="Vertical" HorizontalAlignment="Right">
+                            <StackPanel Classes="Unread" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="n" Text="1" />
+                                <TextBlock Classes="u" Text="unread" />
+                            </StackPanel>
+                            <StackPanel Classes="MetaInfo" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="Date" Text="12.12.2019" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DockPanel> 
+                </Border>
+
+                <Border Classes="ChatPreview_bd">
+                    <DockPanel Classes="ChatPreview">
+                        <StackPanel DockPanel.Dock="Left" Orientation="Vertical" HorizontalAlignment="Right">
+                            <TextBlock Classes="Name" Text="WhatARandomNickName" />
+                            <TextBlock Classes="LastMessage" Text="Oh, I left some fucking useless messages" />
+                        </StackPanel>
+                        
+                        <StackPanel DockPanel.Dock="Right" Orientation="Vertical" HorizontalAlignment="Right">
+                            <StackPanel Classes="Unread" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="n" Text="12" />
+                                <TextBlock Classes="u" Text="unread" />
+                            </StackPanel>
+                            <StackPanel Classes="MetaInfo" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="Date" Text="12.12.2019" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DockPanel> 
+                </Border>
+
+                <Border Classes="ChatPreview_bd">
+                    <DockPanel Classes="ChatPreview">
+                        <StackPanel DockPanel.Dock="Left" Orientation="Vertical" HorizontalAlignment="Right">
+                            <TextBlock Classes="Name" Text="WhatARandomNickName" />
+                            <TextBlock Classes="LastMessage" Text="Oh, I left some fucking useless messages" />
+                        </StackPanel>
+                        
+                        <StackPanel DockPanel.Dock="Right" Orientation="Vertical" HorizontalAlignment="Right">
+                            <StackPanel Classes="Unread" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="n" Text="12" />
+                                <TextBlock Classes="u" Text="unread" />
+                            </StackPanel>
+                            <StackPanel Classes="MetaInfo" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="Date" Text="12.12.2019" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DockPanel> 
+                </Border>
+
+                <Border Classes="ChatPreview_bd">
+                    <DockPanel Classes="ChatPreview">
+                        <StackPanel DockPanel.Dock="Left" Orientation="Vertical" HorizontalAlignment="Right">
+                            <TextBlock Classes="Name" Text="WhatARandomNickName" />
+                            <TextBlock Classes="LastMessage" Text="Oh, I left some fucking useless messages" />
+                        </StackPanel>
+                        
+                        <StackPanel DockPanel.Dock="Right" Orientation="Vertical" HorizontalAlignment="Right">
+                            <StackPanel Classes="Unread" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="n" Text="12" />
+                                <TextBlock Classes="u" Text="unread" />
+                            </StackPanel>
+                            <StackPanel Classes="MetaInfo" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="Date" Text="12.12.2019" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DockPanel> 
+                </Border>
+
+                <Border Classes="ChatPreview_bd">
+                    <DockPanel Classes="ChatPreview">
+                        <StackPanel DockPanel.Dock="Left" Orientation="Vertical" HorizontalAlignment="Right">
+                            <TextBlock Classes="Name" Text="WhatARandomNickName" />
+                            <TextBlock Classes="LastMessage" Text="Oh, I left some fucking useless messages" />
+                        </StackPanel>
+                        
+                        <StackPanel DockPanel.Dock="Right" Orientation="Vertical" HorizontalAlignment="Right">
+                            <StackPanel Classes="Unread" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="n" Text="12" />
+                                <TextBlock Classes="u" Text="unread" />
+                            </StackPanel>
+                            <StackPanel Classes="MetaInfo" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="Date" Text="12.12.2019" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DockPanel> 
+                </Border>
+
+                <Border Classes="ChatPreview_bd">
+                    <DockPanel Classes="ChatPreview">
+                        <StackPanel DockPanel.Dock="Left" Orientation="Vertical" HorizontalAlignment="Right">
+                            <TextBlock Classes="Name" Text="WhatARandomNickName" />
+                            <TextBlock Classes="LastMessage" Text="Oh, I left some fucking useless messages" />
+                        </StackPanel>
+                        
+                        <StackPanel DockPanel.Dock="Right" Orientation="Vertical" HorizontalAlignment="Right">
+                            <StackPanel Classes="Unread" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="n" Text="12" />
+                                <TextBlock Classes="u" Text="unread" />
+                            </StackPanel>
+                            <StackPanel Classes="MetaInfo" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="Date" Text="12.12.2019" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DockPanel> 
+                </Border>
+
+                <Border Classes="ChatPreview_bd">
+                    <DockPanel Classes="ChatPreview">
+                        <StackPanel DockPanel.Dock="Left" Orientation="Vertical" HorizontalAlignment="Right">
+                            <TextBlock Classes="Name" Text="WhatARandomNickName" />
+                            <TextBlock Classes="LastMessage" Text="Oh, I left some fucking useless messages" />
+                        </StackPanel>
+                        
+                        <StackPanel DockPanel.Dock="Right" Orientation="Vertical" HorizontalAlignment="Right">
+                            <StackPanel Classes="Unread" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="n" Text="12" />
+                                <TextBlock Classes="u" Text="unread" />
+                            </StackPanel>
+                            <StackPanel Classes="MetaInfo" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="Date" Text="12.12.2019" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DockPanel> 
+                </Border>
+
+                <Border Classes="ChatPreview_bd">
+                    <DockPanel Classes="ChatPreview">
+                        <StackPanel DockPanel.Dock="Left" Orientation="Vertical" HorizontalAlignment="Right">
+                            <TextBlock Classes="Name" Text="WhatARandomNickName" />
+                            <TextBlock Classes="LastMessage" Text="Oh, I left some fucking useless messages" />
+                        </StackPanel>
+                        
+                        <StackPanel DockPanel.Dock="Right" Orientation="Vertical" HorizontalAlignment="Right">
+                            <StackPanel Classes="Unread" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="n" Text="12" />
+                                <TextBlock Classes="u" Text="unread" />
+                            </StackPanel>
+                            <StackPanel Classes="MetaInfo" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="Date" Text="12.12.2019" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DockPanel> 
+                </Border>
+
+                <Border Classes="ChatPreview_bd">
+                    <DockPanel Classes="ChatPreview">
+                        <StackPanel DockPanel.Dock="Left" Orientation="Vertical" HorizontalAlignment="Right">
+                            <TextBlock Classes="Name" Text="WhatARandomNickName" />
+                            <TextBlock Classes="LastMessage" Text="Oh, I left some fucking useless messages" />
+                        </StackPanel>
+                        
+                        <StackPanel DockPanel.Dock="Right" Orientation="Vertical" HorizontalAlignment="Right">
+                            <StackPanel Classes="Unread" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="n" Text="12" />
+                                <TextBlock Classes="u" Text="unread" />
+                            </StackPanel>
+                            <StackPanel Classes="MetaInfo" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Classes="Date" Text="12.12.2019" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DockPanel> 
+                </Border>
+
+            </StackPanel>
+        </ScrollViewer>
+   
+    </DockPanel>
+    
+</UserControl>

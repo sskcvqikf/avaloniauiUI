@@ -1,0 +1,33 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Desktop.Views.LoginView" Background="#1b262c">
+    <DockPanel>
+
+        <Button DockPanel.Dock="Bottom" Classes="LoginButton">
+                <TextBlock>Login!</TextBlock>
+        </Button>
+        <TextBlock Classes="LoginGreeting" DockPanel.Dock="Top">LET`S LOGIN YOU!</TextBlock>   
+        <StackPanel DockPanel.Dock="Top" Classes="LoginForm">
+            <StackPanel Classes="LoginBox LBox">
+                <TextBox
+                    Watermark = "Enter your login!" 
+                >
+                </TextBox>
+            </StackPanel>
+
+            <StackPanel Classes="PasswordBox LBox">
+                <TextBox
+                    Watermark="Enter your password!"
+                    PasswordChar=" "
+                >
+                </TextBox>
+            </StackPanel>
+            <TextBlock Classes="RequestAccount">Already have an account?</TextBlock>
+        </StackPanel>
+        
+    </DockPanel>   
+
+</UserControl>
